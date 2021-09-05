@@ -118,3 +118,34 @@ header::before {
   height: 100%;
   width: 100%;
 }
+.mdx {
+  margin-bottom: -250px;
+}
+
+.bg-purpel {
+  background-color: var(--dark-violet);
+  padding: 40px;
+  position: relative;
+  margin: 100px auto;
+}
+.bg-purpel h2 {
+  color: #fff;
+  padding: 0;
+  width: 90%;
+  font-size: 3rem;
+}
+.bg-purpel::before {
+  content: "";
+  background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-position: top right;
+  height: 100%;
+  width: 100%;
+}
+
+.tital {
+  margin-top: 80px;
+}
