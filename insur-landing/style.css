@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+:root {
+  --dark-violet: hsl(256, 26%, 20%);
+  --Grayish-Blue: hsl(216, 30%, 68%);
+  --Very-Dark-Violet: hsl(270, 9%, 17%);
+  --Dark-Grayish-Violet: hsl(273, 4%, 51%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+body {
+  font-family: "karla", sans-serif;
+  margin: 0;
+}
+h1,
+h2,
+h3 {
+  font-family: "DM Serif Display", sans-serif, "karla";
+}
+h1,
+h2 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  line-height: 1;
+  position: relative;
+  margin: 0;
+  padding-top: 50px;
+}
+h3 {
+  font-size: 2rem;
+}
+p {
+  opacity: 0.8;
+}
+.line-top::before {
+  content: "";
+  height: 1px;
+  width: 150px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.line-violet::before {
+  background-color: var(--dark-violet);
+}
+
+.container {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1200px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex > div * {
+  flex: 1;
+}
+.align-start {
+  align-items: flex-start;
+}
+.btn {
+  border: 2px solid var(--dark-violet);
+  padding: 15px 25px;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+.btn-gros {
+  background-color: var(--dark-violet);
+  color: #fff;
+  border: solid 2px #fff;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+nav li {
+  margin-left: 30px;
+}
+nav li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--Dark-Grayish-Violet);
+}
+header {
+  background-color: var(--dark-violet);
+  color: #fff;
+  padding: 50px 0;
+  position: relative;
+  margin-bottom: 250px;
+}
+header::after {
+  content: "";
+  background-image: url(./images/bg-pattern-intro-right-desktop.svg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-position: top right;
+  height: 100%;
+  width: 100%;
+}
+header::before {
+  content: "";
+  background-image: url(./images/bg-pattern-intro-left-desktop.svg);
+  position: absolute;
+  bottom: -60%;
+  right: 0;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  height: 100%;
+  width: 100%;
+}
