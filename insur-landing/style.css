@@ -180,3 +180,6 @@ footer li a {
   border-bottom: 1px solid var(--Grayish-Blue);
   margin-bottom: 30px;
 }
+.attribution {
+  text-align: center;
+}
