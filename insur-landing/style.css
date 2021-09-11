@@ -78,6 +78,9 @@ p {
   color: #fff;
   border: solid 2px #fff;
 }
+.btn-gros:hover {
+  background-color: white;
+}
 
 .nav-ul {
   display: flex;
