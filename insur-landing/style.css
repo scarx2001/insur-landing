@@ -109,12 +109,14 @@ button {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--Dark-Grayish-Violet);
+
   border: 2px solid white;
   padding: 15px 25px;
   background-color: transparent;
+  position: relative;
 }
 button:hover {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 header::after {
@@ -128,7 +130,17 @@ header::after {
   height: 100%;
   width: 100%;
 }
-
+header::before {
+  content: "";
+  background-image: url(./images/bg-pattern-intro-left-desktop.svg);
+  position: absolute;
+  bottom: -60%;
+  right: 0;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  height: 100%;
+  width: 100%;
+}
 .mdx {
   margin-bottom: -250px;
 }
@@ -151,6 +163,7 @@ header::after {
   position: absolute;
   top: 0;
   right: 0;
+
   background-repeat: no-repeat;
   background-position: top right;
   height: 100%;
@@ -194,6 +207,7 @@ footer li a {
   text-decoration: none;
   text-transform: uppercase;
 }
+
 .position {
   margin-left: 15px;
 }
