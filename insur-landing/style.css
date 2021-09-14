@@ -33,6 +33,9 @@ h3 {
 p {
   opacity: 0.8;
 }
+.m {
+  margin-bottom: 30px;
+}
 .line-top::before {
   content: "";
   height: 1px;
@@ -64,22 +67,20 @@ p {
 .align-start {
   align-items: flex-start;
 }
-.btn {
+
+.nav-hov {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--Dark-Grayish-Violet);
   border: 2px solid var(--dark-violet);
   padding: 15px 25px;
-  background-color: transparent;
-  text-transform: uppercase;
 }
-.btn:hover {
-  background-color: var(--dark-violet);
-}
-.btn-gros {
-  background-color: var(--dark-violet);
+.nav-hov:hover {
   color: #fff;
-  border: solid 2px #fff;
+  background-color: var(--dark-violet);
 }
-.btn-gros:hover {
-  color: aqua;
+.nav-a:hover {
+  color: var(--dark-violet);
 }
 
 .nav-ul {
@@ -104,6 +105,18 @@ header {
   position: relative;
   margin-bottom: 250px;
 }
+button {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--Dark-Grayish-Violet);
+  border: 2px solid white;
+  padding: 15px 25px;
+  background-color: transparent;
+}
+button:hover {
+  background-color: white;
+}
+
 header::after {
   content: "";
   background-image: url(./images/bg-pattern-intro-right-desktop.svg);
