@@ -54,6 +54,8 @@ p {
   margin: 0 auto;
   max-width: 100%;
   width: 1200px;
+  position: relative;
+  z-index: 2;
 }
 .flex {
   display: flex;
@@ -67,7 +69,9 @@ p {
 .align-start {
   align-items: flex-start;
 }
-
+nav {
+  background-color: white;
+}
 .nav-hov {
   text-transform: uppercase;
   text-decoration: none;
@@ -98,7 +102,7 @@ p {
   color: var(--Dark-Grayish-Violet);
 }
 
-header {
+.purple-background {
   background-color: var(--dark-violet);
   color: #fff;
   padding: 50px 0;
@@ -119,7 +123,7 @@ button:hover {
   background-color: rgb(255, 255, 255);
 }
 
-header::after {
+.purple-background::after {
   content: "";
   background-image: url(./images/bg-pattern-intro-right-desktop.svg);
   position: absolute;
@@ -130,7 +134,7 @@ header::after {
   height: 100%;
   width: 100%;
 }
-header::before {
+.purple-background::before {
   content: "";
   background-image: url(./images/bg-pattern-intro-left-desktop.svg);
   position: absolute;
@@ -141,7 +145,7 @@ header::before {
   height: 100%;
   width: 100%;
 }
-.mdx {
+.img {
   margin-bottom: -250px;
 }
 
