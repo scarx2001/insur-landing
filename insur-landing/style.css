@@ -46,16 +46,16 @@ p {
   left: 0;
 }
 .line-violet::before {
-  background-color: var(--dark-violet);
+  background-color: rgb(191, 110, 223);
 }
-
+.line-violet {
+  margin-bottom: 80px;
+}
 .container {
   padding: 20px;
   margin: 0 auto;
   max-width: 100%;
   width: 1200px;
-  position: relative;
-  z-index: 2;
 }
 .flex {
   display: flex;
@@ -81,7 +81,7 @@ nav {
 }
 .nav-hov:hover {
   color: #fff;
-  background-color: var(--dark-violet);
+  background-color: var(--Very-Dark-Violet);
 }
 .nav-a:hover {
   color: var(--dark-violet);
@@ -112,7 +112,7 @@ nav {
 button {
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--Dark-Grayish-Violet);
+  color: white;
 
   border: 2px solid white;
   padding: 15px 25px;
@@ -121,6 +121,7 @@ button {
 }
 button:hover {
   background-color: rgb(255, 255, 255);
+  color: var(--Very-Dark-Violet);
 }
 
 .purple-background::after {
@@ -182,6 +183,14 @@ footer {
   position: relative;
   padding: 30px 0;
 }
+.footer-container {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1200px;
+  z-index: 2;
+  position: relative;
+}
 footer::before {
   content: "";
   background-image: url(./images/bg-pattern-footer-desktop.svg);
@@ -210,6 +219,15 @@ footer li a {
   color: var(--dark-violet);
   text-decoration: none;
   text-transform: uppercase;
+}
+footer li a:hover {
+  text-decoration: underline;
+}
+.icons:hover {
+  fill: var(--Very-Dark-Violet);
+}
+.icons {
+  fill: gray;
 }
 
 .position {
