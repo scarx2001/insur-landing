@@ -242,3 +242,17 @@ footer li a:hover {
   text-align: center;
   background-color: var(--Very-Light-Gray);
 }
+@media screen and (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+  body {
+    text-align: center;
+  }
+  footer.flex div {
+    width: 100%;
+  }
+  footer ul.flex {
+    flex-direction: row;
+  }
+}
