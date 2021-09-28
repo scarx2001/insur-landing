@@ -46,6 +46,15 @@ p {
   top: 0;
   left: 0;
 }
+.line-top2::before {
+  content: "";
+  height: 1px;
+  width: 150px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .line-violet::before {
   background-color: rgb(191, 110, 223);
 }
@@ -274,7 +283,7 @@ footer li a:hover {
     width: 100%;
   }
   .line-top::before {
-    background-color: var(--dark-violet);
+    display: none;
   }
   .container {
     padding: 0;
@@ -287,32 +296,74 @@ footer li a:hover {
     margin-bottom: 150px;
   }
   footer::before {
+    display: none;
+  }
+  .footer-pattern {
+    background-repeat: no-repeat;
+  }
+  .footer-pattern::after {
+    content: "";
     background-image: url(./images/bg-pattern-footer-mobile.svg);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: top left;
+    height: 100%;
+    width: 100%;
+    background-position-y: -50px;
   }
   .btn-mob {
     margin-bottom: 50px;
   }
-  .bg-purpel {
-  }
+
   .bg-purpel::before {
     background-repeat: no-repeat;
     background-image: url(./images/bg-pattern-how-we-work-mobile.svg);
   }
+
   .img {
     margin-bottom: 0;
     width: 100%;
   }
   .mdx {
     display: inline-block;
-    margin-left: -40px;
+
+    width: 100%;
 
     max-width: calc(100% + 40px);
   }
-  .purple-background::after {
-    background-image: url(./images/bg-pattern-intro-left-mobile.svg);
-    top: 482px;
 
-    right: 200px;
+  .mobile-pattern {
+    background-repeat: no-repeat;
+  }
+  .mobile-pattern::after {
+    content: "";
+    background-image: url(./images/bg-pattern-intro-left-mobile.svg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: top left;
+    height: 100%;
+    z-index: -1;
+    width: 100%;
+  }
+  .mobile-pattern::before {
+    content: "";
+    background-image: url(./images/bg-pattern-intro-right-mobile.svg);
+    position: absolute;
+    top: 250px;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: top right;
+    height: 100%;
+    z-index: -1;
+    width: 100%;
+  }
+
+  .purple-background::after {
+    display: none;
   }
   .purple-background::before {
     display: none;
