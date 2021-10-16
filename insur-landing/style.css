@@ -2,6 +2,9 @@
 * {
   box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+}
 :root {
   --dark-violet: hsl(256, 26%, 20%);
   --Grayish-Blue: hsl(216, 30%, 68%);
@@ -23,7 +26,6 @@ h2 {
   font-size: 3rem;
   letter-spacing: 2px;
   line-height: 1;
-  position: relative;
   margin: 0;
   padding-top: 50px;
 }
@@ -33,8 +35,8 @@ h3 {
 p {
   opacity: 0.8;
 }
-.m {
-  margin-bottom: 30px;
+.line-top {
+  position: relative;
 }
 .line-top::before {
   content: "";
@@ -44,6 +46,9 @@ p {
   position: absolute;
   top: 0;
   left: 0;
+}
+.hero__description {
+  margin-bottom: 30px;
 }
 .line-violet::before {
   background-color: rgb(191, 110, 223);
@@ -72,16 +77,23 @@ p {
 nav {
   background-color: white;
 }
-.nav-hov {
+.btn {
   text-transform: uppercase;
-  text-decoration: none;
   color: var(--Dark-Grayish-Violet);
   border: 2px solid var(--dark-violet);
   padding: 15px 25px;
 }
-.nav-hov:hover {
+.btn--light {
+  color: white;
+  border-color: white;
+}
+.btn:hover {
   color: #fff;
   background-color: var(--Very-Dark-Violet);
+}
+.btn--light:hover {
+  background-color: white;
+  color: var(--Very-Dark-Violet);
 }
 .nav-a:hover {
   color: var(--dark-violet);
@@ -98,11 +110,10 @@ nav {
 
 .nav-a {
   text-transform: uppercase;
-  text-decoration: none;
   color: var(--Dark-Grayish-Violet);
 }
 
-.purple-background {
+.hero {
   background-color: var(--dark-violet);
   color: #fff;
   padding: 50px 0;
@@ -110,21 +121,16 @@ nav {
   margin-bottom: 250px;
 }
 button {
-  text-transform: uppercase;
-  text-decoration: none;
   color: white;
-
-  border: 2px solid white;
-  padding: 15px 25px;
   background-color: transparent;
-  position: relative;
+  border-color: white;
 }
 button:hover {
   background-color: rgb(255, 255, 255);
   color: var(--Very-Dark-Violet);
 }
 
-.purple-background::after {
+.hero::after {
   content: "";
   background-image: url(./images/bg-pattern-intro-right-desktop.svg);
   position: absolute;
@@ -135,7 +141,7 @@ button:hover {
   height: 100%;
   width: 100%;
 }
-.purple-background::before {
+.hero::before {
   content: "";
   background-image: url(./images/bg-pattern-intro-left-desktop.svg);
   position: absolute;
@@ -146,23 +152,35 @@ button:hover {
   height: 100%;
   width: 100%;
 }
-.img {
+.hero__content {
+  position: relative;
+  z-index: 2;
+}
+.hero__title,
+.features__title,
+.banner__title {
+  font-weight: 500;
+}
+.hero__cover {
   margin-bottom: -250px;
 }
 
-.bg-purpel {
+.banner {
   background-color: var(--dark-violet);
   padding: 40px;
   position: relative;
   margin: 100px auto;
 }
-.bg-purpel-h2 {
+.banner__content {
+  position: relative;
+}
+.banner__title {
   color: #fff;
   padding: 0;
-  width: 90%;
+  width: 50%;
   font-size: 3rem;
 }
-.bg-purpel::before {
+.banner::before {
   content: "";
   background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
   position: absolute;
